@@ -1,7 +1,4 @@
 
-import { footerMain, footerPrimary } from "@/constants/colors";
-import { sixteen } from "@/constants/fontSizes";
-import { fiveHundrend } from "@/constants/fontWeight";
 import logo from "@/public/logo.svg";
 import Image from "next/image";
 const Footer = () => {
@@ -65,7 +62,7 @@ const Footer = () => {
             data.map((item, id)=>(
                 <div key={id}>
                     <h1 
-                        className={`text-[${sixteen}] font-[${fiveHundrend}] text-[${footerMain}] mb-[20px]`}
+                        className={`text-sixteen font-fiveHundrend text-footerMain mb-[20px]`}
                     >
                         {item.title}
                     </h1>
@@ -73,7 +70,7 @@ const Footer = () => {
                         {item.data.map(item=>(
                             <li 
                                 key={`${id}${item}`}
-                                className={`text-[${footerPrimary}] text-[${sixteen}] font-[${fiveHundrend}] mb-[15px]`}
+                                className={`text-footerPrimary text-sixteen font-fiveHundrend mb-[15px]`}
                             >
                                 {item}
                             </li>

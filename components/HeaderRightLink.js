@@ -1,6 +1,5 @@
 "use client";
 
-import { purpleDeep, white } from "@/constants/colors";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 const HeaderRightLink = () => {
@@ -8,7 +7,7 @@ const HeaderRightLink = () => {
   const isWaitList = path === "/waitlist";
   return (
     <Link 
-      className={`bg-[${purpleDeep}] text-[${white}] py-[10px] px-[16px] rounded-[100px]`} 
+      className={`bg-purpleDeep text-white py-[10px] px-[16px] rounded-[100px]`} 
       href={"/waitlist"}
     >
       {isWaitList ? "Documentation" : "Join waitlist"}

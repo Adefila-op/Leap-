@@ -9,9 +9,9 @@ const ContentWithEyes = ({ children }) => {
         </div>
         <div>
             <Image 
-                src={eyes} 
-                alt="eyes logo"
-                priority
+              src={eyes} 
+              alt="eyes logo"
+              priority
             />
         </div>
     </main>
