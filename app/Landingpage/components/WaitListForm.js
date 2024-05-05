@@ -8,25 +8,23 @@ const WaitListForm = () => {
         e.preventDefault();
     }
   return (
-    <form 
-        className={`relative`}
-        onSubmit={handleSubmit}
-    >
-        <input 
-            type="email"
-            onChange={(e)=> setEmail(e.target.value)}
-            placeholder="Enter your mail address"
-            className={`border-[1px] rounded-[8px] py-[15px] px-[12px] w-[500px] text-[16px] bg-inherit border-[#F6F9F9] font-fourHundrend text-lightGrey`}
+    <form onSubmit={handleSubmit}>
+      <div className="flex items-center border rounded-md w-full md:w-[500px] justify-between">
+        <input
+          type="email"
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Enter your mail address"
+          className={` rounded-md py-4 px-6 focus:outline-none w-full text-[16px] bg-inherit  font-fourHundrend text-lightGrey`}
         />
-        <button 
-            type="submit"
-            className={`bg-purpleDeep text-white text-sixteen font-sixHundrend rounded-[8px] py-[10px] px-[16px] absolute top-[44%] right-[-15px]`}
-            style={{translate: "-50%"}}
+        <button
+          type="submit"
+          className={`bg-purpleDeep text-white text-sixteen font-sixHundrend rounded-md py-3.5 px-8`}
         >
-            Submit
+          Submit
         </button>
+      </div>
     </form>
-  )
+  );
 }
 
 export default WaitListForm

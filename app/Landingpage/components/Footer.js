@@ -56,8 +56,8 @@ const Footer = () => {
         }
     ]
   return (
-    <footer className=" grid grid-cols-6 gap-[20px]">
-        <Image src={logo} alt="logo"/>
+    <footer className=" grid lg:grid-cols-6 md:grid-cols-4  gap-2 px-6 md:px-0">
+        <Image src={logo} width={110} height={60} alt="logo"/>
         {
             data.map((item, id)=>(
                 <div key={id}>

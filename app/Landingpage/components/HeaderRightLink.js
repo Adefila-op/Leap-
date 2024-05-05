@@ -7,7 +7,7 @@ const HeaderRightLink = () => {
   const isWaitList = path === "/waitlist";
   return (
     <Link 
-      className={`bg-purpleDeep text-white py-[10px] px-[16px] rounded-[100px]`} 
+      className={`bg-purpleDeep shadow-green-500 shadow-lg text-white py-2 px-4 rounded-full`} 
       href={"/waitlist"}
     >
       {isWaitList ? "Documentation" : "Join waitlist"}
